@@ -90,15 +90,9 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-# alias ll='ls -alF'
+alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
-# rofi
-alias rr='rofi -show run'
-
-# i3lock
-alias ll='i3lock -i ~/lock/blur-fjord.png'
 
 # python3
 alias py3='python3'
