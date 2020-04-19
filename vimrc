@@ -55,6 +55,7 @@ set scrolloff=10
 set completeopt-=preview
 set background=dark
 set timeoutlen=1000 ttimeoutlen=0
+set noswapfile
 colorscheme off
 
 nnoremap <C-L> :nohl<CR><C-L>
