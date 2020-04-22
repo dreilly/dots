@@ -69,8 +69,8 @@ nmap <Leader>t :NERDTreeFind<CR>
 nmap <Leader>c :NERDTreeClose<CR>
 
 "FZF Binds
-nmap <Leader>p :Files<CR>
-nmap <Leader>P :GFiles<CR>
+nmap <Leader>p :GFiles<CR>
+nmap <Leader>P :Files<CR>
 nmap ; :Buffers<CR>
 
 "FZF settings
