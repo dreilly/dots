@@ -183,7 +183,7 @@ focus_follows_mouse no
 # Please remove the following exec line:
 # exec i3-config-wizard
 #######################################################################
-for_window [class="^.*"] border pixel 3
+for_window [class=".*"] border pixel 3
 exec_always --no-startup-id feh --bg-scale ~/walls/mountain_snowy_fjord.jpg
 exec_always --no-startup-id /home/daniel/.screenlayout/jammer.sh
 #exec_always --no-startup-id /home/daniel/.config/polybar/launch.sh
