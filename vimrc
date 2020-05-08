@@ -58,11 +58,16 @@ set timeoutlen=1000 ttimeoutlen=0
 set noswapfile
 colorscheme off
 
+"Better split buffer movements
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <Leader>j <C-W><C-J>
 nnoremap <Leader>k <C-W><C-K>
 nnoremap <Leader>l <C-W><C-L>
 nnoremap <Leader>h <C-W><C-H>
+
+"Syntax binds
+nmap <Leader>i :set syntax=whitespace<CR>
+nmap <Leader>I :set syntax=on<CR>
 
 nmap <Leader>z :NERDTree<CR>
 nmap <Leader>t :NERDTreeFind<CR>
