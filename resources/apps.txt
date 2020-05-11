@@ -1,0 +1,8 @@
+neovim (p)
+i3 (gaps) (p)
+	i3status - i3lock
+alacritty 
+compton
+
+
+
