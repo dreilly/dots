@@ -96,3 +96,7 @@ augroup END
 let g:racer_experimental_completer = 1
 "/Rust
 
+augroup cf_ft
+		au!
+		autocmd BufNewFile,BufRead *.cfm	set syntax=off
+augroup END
