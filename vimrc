@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'jremmen/vim-ripgrep'
 	Plug 'dreilly/vim-colors-off'
 	Plug 'morhetz/gruvbox'
+	Plug 'chriskempson/base16-vim'
 	Plug 'christoomey/vim-system-copy'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
@@ -15,6 +16,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'Raimondi/delimitMate'
 	Plug 'racer-rust/vim-racer'
 	Plug 'rust-lang/rust.vim'
+	Plug 'vimwiki/vimwiki'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 call plug#end()
 
@@ -56,7 +59,11 @@ set completeopt-=preview
 set background=dark
 set timeoutlen=1000 ttimeoutlen=0
 set noswapfile
-colorscheme off
+colorscheme gruvbox
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+nmap <Leader>mw :MarkdownPreview<CR>
 
 "Better split buffer movements
 nnoremap <C-L> :nohl<CR><C-L>
@@ -100,3 +107,5 @@ augroup cf_ft
 		au!
 		autocmd BufNewFile,BufRead *.cfm	set syntax=off
 augroup END
+
+
