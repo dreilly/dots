@@ -128,7 +128,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -185,5 +186,11 @@ focus_follows_mouse no
 #######################################################################
 for_window [class=".*"] border pixel 3
 exec_always --no-startup-id feh --bg-scale ~/walls/mountain_snowy_fjord.jpg
-exec_always --no-startup-id /home/daniel/.screenlayout/jammer.sh
-#exec_always --no-startup-id /home/daniel/.config/polybar/launch.sh
+exec_always --no-startup-id /home/daniel/.screenlayout/big.sh
+
+bindsym $mod+i exec /home/daniel/.screenlayout/laptop_only.sh
+bindsym $mod+o exec /home/daniel/.screenlayout/big.sh
+bindsym $mod+p exec feh --bg-scale ~/walls/mountain_snowy_fjord.jpg
+# exec_always --no-startup-id /home/daniel/.screenlayout/jammer.sh
+# exec_always --no-startup-id /home/daniel/.config/polybar/launch.sh
+exec_always --no-startup-id compton
